@@ -4,13 +4,12 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 
-var bufferstuff = fs.readFileSync('index.html');
-
-var buffertext = Buffer.toString( bufferstuff );
+// var bufferstuff = fs.readFileSync('index.html');
+// var buffertext = Buffer.toString( bufferstuff );
 
 var bufferjam = fs.readFileSync('index.html').toString();
 
-console.log(bufferjam);
+// console.log(bufferjam);
 
 app.get('/', function(request, response) {
   response.send(bufferjam);
