@@ -8,8 +8,12 @@ var bufferstuff = fs.readFileSync('index.html');
 
 var buffertext = Buffer.toString( bufferstuff );
 
+var bufferjam = fs.readFileSync('index.html').toString();
+
+console.log(bufferjam);
+
 app.get('/', function(request, response) {
-  response.send(bufferstuff);
+  response.send(bufferjam);
 });
 
 var port = process.env.PORT || 5000;
