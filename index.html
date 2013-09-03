@@ -45,8 +45,12 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background: /* url(tapemix-tessellate-v01.png) */ #ddd;	
+      }
+      div.container {
 	background: #ddd;
       }
+
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
@@ -96,14 +100,141 @@
         font-size: 11px;
       }
       .footer a {
-        color: #ccccff;
+	color: #ccf;
       }
-  
+      a {
+	color: #00d;
+      } 
+
+ 
 /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
  div.addthis_toolbox {
   width:180px;
   margin: 0 auto;
  }
+ 
+div.addthis_toolbox2 {
+  width:250px;
+  margin: 0 auto;
+ }
+
+	div.container-banner {
+		background: #000 !important;
+	}
+		/*Pricing table CSS below */
+		
+		.pricing-table .plan {
+		  border-radius: 5px;
+		  text-align: center;
+		  background-color: #f3f3f3;
+		  min-height: 370px;
+/*		  max-height: 370px;*/
+		  -moz-box-shadow: 0 0 6px 2px #b0b2ab;
+		  -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+		  box-shadow: 0 0 6px 2px #b0b2ab;
+		}
+		 
+		 .plan:hover {
+		  background-color: #fff;
+		  -moz-box-shadow: 0 0 12px 3px #b0b2ab;
+		  -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+		  box-shadow: 0 0 12px 3px #b0b2ab;
+		}
+		 
+		 .plan {
+		  padding: 20px;
+		  color: #ff;
+		  background-color: #5e5f59;
+		  -moz-border-radius: 5px 5px 0 0;
+		  -webkit-border-radius: 5px 5px 0 0;
+		  border-radius: 55px 55px 0 0;
+		}
+		  
+		.plan-name-dr {
+		  padding: 20px;
+		  color: #fff;
+		  background-color: #66f;
+		  -moz-border-radius: 5px 5px 0 0;
+		  -webkit-border-radius: 5px 5px 0 0;
+		  border-radius: 5px 5px 0 0;
+		 }
+		  
+		.plan-name-dg {
+		  padding: 20px;
+		  color: #fff;
+		  background-color: #f66;
+		  -moz-border-radius: 5px 5px 0 0;
+		  -webkit-border-radius: 5px 5px 0 0;
+		  border-radius: 5px 5px 0 0;
+		 }
+		  
+		.plan-name-db {
+		  padding: 20px;
+		  color: #ff0;
+		  background-color: #333;
+		  -moz-border-radius: 5px 5px 0 0;
+		  -webkit-border-radius: 5px 5px 0 0;
+		  border-radius: 5px 5px 0 0;
+		  } 
+		.pricing-table-bronze  {
+		  padding: 20px;
+		  color: #fff;
+		  background-color: #f89406;
+		  -moz-border-radius: 5px 5px 0 0;
+		  -webkit-border-radius: 5px 5px 0 0;
+		  border-radius: 5px 5px 0 0;
+		}
+		  
+		.pricing-table .plan .plan-name span {
+		  font-size: 20px;
+		}
+		 
+		.pricing-table .plan ul {
+		  list-style: none;
+		  margin: 0;
+		  -moz-border-radius: 0 0 5px 5px;
+		  -webkit-border-radius: 0 0 5px 5px;
+		  border-radius: 0 0 5px 5px;
+		}
+		 
+		.pricing-table .plan ul li.plan-feature {
+		  padding: 15px 10px;
+		  border-top: 1px solid #c5c8c0;
+		}
+		 
+		.pricing-three-column {
+		  margin: 0 auto;
+		  width: 85%;
+		}
+		 
+		.pricing-variable-height .plan {
+		  float: none;
+		  margin-left: 2%;
+		  vertical-align: bottom;
+		  display: inline-block;
+		  zoom:1;
+		  *display:inline;
+		}
+		 
+		.plan-mouseover .plan-name {
+		  background-color: #4e9a06 !important;
+		}
+		 
+		.btn-plan-select {
+		  padding: 8px 25px;
+		  font-size: 18px;
+		}
+
+		.progress {
+		  margin-bottom: 5px !important;
+		}
+
+		p.weaselwords {
+		  color: #666;
+		  font-size: 14px;
+		  text-align: center;
+		}
+
 </style>
 
 <script type="text/javascript">
@@ -127,20 +258,23 @@
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container">
+        <div class="container container-banner">
           <button type="button" class="btn btn-navbar"
                   data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Bitstarter</a>
+          <a class="brand" href="#">Tapemix</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
+              <li><a href="#donate">Donate</a></li>
               <li><a href="#faq">FAQ</a></li>
+<!--
      		<li><a href="/orders">Orders</a></li>
-		<li><a href="mailto:info@tapemix.org?Subject=Tapemix%20Bitstarter" target="_blank">Contact</a></li>
+		<li><a href="mailto:info@tapemix.org?Subject=Tapemix%20Bitstarter" data-rel="external">Contact</a></li>
+-->
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -185,7 +319,7 @@
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$20</h3> <p>of $700</p>
+                  <h3>$60</h3> <p>of $2000</p>
                 </div>
               </div>
               <div class="span4">
@@ -202,15 +336,16 @@
               <div class="bar bar-success" style="width: 3%;"></div>
               <div class="bar bar-warning" style="width: 97%;"></div>
             </div>
+	    <p class="weaselwords">(updated every day or so)</p>
           </div>
-          <div class="span6 offset2 order">
+          <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-        
+       <!-- 
 <a class="coinbase-button" data-code="35bbdc038c0bae0996b9884d2c1e671d" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" href="https://coinbase.com/checkouts/35bbdc038c0bae0996b9884d2c1e671d">Preorder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-<!--
     <button class="btn btn-success btn-large">Preorder</button>
 -->
+	<a href="#donate" class="btn btn-success btn-large">Donate Now!</a>
           </div>
 
 <div class="span8 offset2 social">
@@ -272,12 +407,105 @@
 	    </ul>
           </div>
       </div>
+     <div class="span10 offset1 fund_header" id="donate">
+          <h3>Donate to Tapemix</h3>
+	  <p>Our goal is to make Tapemix <b>100% open source</b> and <b>ad-free</b>. Unfortunately, we still need to feed both ourselves and our machines. Please consider supporting our efforts with a small donation! While our preferred currency is bitcoin, we realize this is crazy future money that not everyone has, so we've included PayPal buttons at every tier. Thanks in advance!</p>
+	<br />
+        </div>
+		
+		<div class="row-fluid pricing-table pricing-three-column">
+        <div class="span4 plan">
+          <div class="plan-name-dr">
+            <h2>The J&#8209;Card</h2>
+            <span>$1 / 0.01 BTC</span>
+          </div>
+          <ul>
+            <li class="plan-feature">Believe it or not, donations at this level are actually very helpful. You'll be officially credited within the app & on tapemix.org as the seed-funding benefactor you are (unless you'd prefer to remain anonymous).</li>
+            <li class="plan-feature">
 
 
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<a class="coinbase-button" data-code="7415c0fdbf68b4aa90076b07cd2caa66" data-button-style="donation_small" href="https://coinbase.com/checkouts/7415c0fdbf68b4aa90076b07cd2caa66">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
+	   </li>
+          </ul>
+        </div>
+        <div class="span4 plan">
+          <div class="plan-name-dg">
+            <h2>The B&nbsp;&amp;&nbsp;P</h2>
+            <span>$10 / 0.1 BTC</span>
+          </div>
+          <ul>
+            <li class="plan-feature">Thanks! This is sandwich money. Like, <i>James Beard nominated</i> sandwich money. In addition to the above, we'll make & send you an actual mix tape.</li>
+				<li class="plan-feature">            
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<a class="coinbase-button" data-code="05ab93dfbb69473391420054a17527cb" data-button-style="donation_small" href="https://coinbase.com/checkouts/05ab93dfbb69473391420054a17527cb">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+
+
+				</li>
+          </ul>
+        </div>
+        <div class="span4 plan">
+          <div class="plan-name-db">
+            <h2>The Analog Master</h2>
+            <span>$100 / 1 BTC</span>
+          </div>
+          <ul>
+            <li class="plan-feature">What are you, made of virtual currency? Once we pick our jaws off the ground, we'll give you all of the above PLUS a t-shirt of your favorite archive.org band.</li>
+			<li class="plan-feature">            
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+<a class="coinbase-button" data-code="0f6aa4d613fd38a2566632b14728493d" data-button-style="donation_small" href="https://coinbase.com/checkouts/0f6aa4d613fd38a2566632b14728493d">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+				</li>
+          </ul>
+        </div>
+      </div>
+      		<div class="row-fluid section1">
+        <div class="span10 offset1 fund_header" id="social">
+          <h3>Help Spread the Word!</h3>
+          <p>Can't support us by donating? No problem. The more people know about this, the better, so please consider showing your support on a social network or two.</p>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox2 addthis_default_style addthis_32x32_style">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52033b313e7878e0"></script>
+<!-- AddThis Button END -->
+
+
+        </div>
+      </div>			 <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
+      <div class="row-fluid faq" id="faq">
           <div class="span10 offset1">
     	   <h3>FAQ</h3>
             <div class="accordion" id="accordion2">
@@ -290,7 +518,7 @@
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Maybe! Check out the full list of 4500+ participating bands at the <a href="http://archive.org/browse.php?collection=etree&field=%2Fmetadata%2Fcreator" target="_blank">Live Music Archive</a>.
+                    Maybe! Check out the full list of 4500+ participating bands at the <a href="http://archive.org/browse.php?collection=etree&field=%2Fmetadata%2Fcreator" target="_blank" alt="Live Music Archive" title="Live Music Archive">Live Music Archive</a>.
                   </div>
                 </div>
               </div>
@@ -303,10 +531,39 @@
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Yep. Our audio files come directly from the <a href="http://archive.org/details/etree" target="_blank">Live Music Archive at Archive.org</a>, which only accepts music from bands who have provided written authorization for the recording and circulation of their live performances. As per the <a href="http://archive.org/about/faqs.php#240" target="_blank">Live Music Archive's own FAQ</a>: <em>"Patrons may download from the LMA with the understanding that the artists still hold their copyrights. All material is strictly noncommercial, both for access here and for any further distribution."</em>
+                    Yep. Our audio files come directly from the <a href="http://archive.org/details/etree" target="_blank" alt="Live Music Archive" title="Live Music Archive">Live Music Archive at Archive.org</a>, which only accepts music from bands who have provided written authorization for the recording and circulation of their live performances. As per the <a href="http://archive.org/about/faqs.php#240" target="_blank" alt="LMAFAQ" title="LMAFAQ">Live Music Archive's own FAQ</a>: <em>"Patrons may download from the LMA with the understanding that the artists still hold their copyrights. All material is strictly noncommercial, both for access here and for any further distribution."</em>
                   </div>
                 </div>
               </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseThree">
+                    Who are you?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Tapemix is the baby pet project of Dave Lowensohn, a musician/coder from the Pacific Northwest who's been musician/coding for the better part of his adult life & thought it would be fun to combine the two. He helms Handwoven Industries, a <a href="http://www.handwovenindustries.com" target="_blank" title="Portland web developer" alt="Portland website design">Portland web design</a> studio which lets him use the word "we." His band Speechwriters LLC somehow has <a href="http://archive.org/search.php?query=speechwriters%20llc" target="_blank" title="Speechwriters LLC at archive.org" alt="Speechwriters LLC at archive.org">almost a million downloads on archive.org</a> & he's not ashamed to admit that he has like six cubic feet of Phish tapes in a box downstairs.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFour">
+                    What's wrong with you that you're asking for bitcoin?
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    A valid question. One, this is actually the final project for <a href="https://www.coursera.org/course/startup" target="_blank" title="Startup Engineering at Coursera" alt="Startup Engineering at Coursera">an online course</a> and we get graded on how much bitcoin we're able to raise. Two, if enough money actually comes in, we'll be able to take some time away from paid work and get Tapemix off the ground much quicker than anticipated. To that end, we're also accepting plain old US dollars, but encourage you to use bitcoin if you can.
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
 
