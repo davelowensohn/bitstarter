@@ -14,6 +14,22 @@
           rel="stylesheet" type="text/css">
     <style type="text/css">
 
+	.heading h1 {
+	  font-size: 50px;
+	  line-height: 50px;
+	}
+
+	.row-fluid [class*="offset"]:first-child {
+	  margin-bottom: 10px !important;
+	}
+
+	.accordion-group, .accordion-inner {
+	  border-top: none !important;
+	  border-bottom: none !important;
+	  border-left: none !important;
+	  border-right: none !important;
+	}
+
       /* Large desktop */
       @media (min-width: 980px) { 
         body {
@@ -74,13 +90,20 @@
       }
       .actions {
         background-color: #343434;
-        padding: 3% 0%;
+        padding: 1% 0% 2%;
       }
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .statistics h3, .statistics p {
-        color: white;
+
+      .statistics p {
+	font-size: 14px !important;
+	color: #fff;
+      }
+
+      .statistics h3 {
+	margin-bottom: 0px !important;
+	color: #ff6;
       }
 
       /* Marketing Copy and Footer */
@@ -132,6 +155,7 @@ div.addthis_toolbox2 {
 		  -moz-box-shadow: 0 0 6px 2px #b0b2ab;
 		  -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
 		  box-shadow: 0 0 6px 2px #b0b2ab;
+		  margin-bottom: 10px;
 		}
 		 
 		 .plan:hover {
@@ -235,6 +259,41 @@ div.addthis_toolbox2 {
 		  text-align: center;
 		}
 
+      .featurette-divider {
+             margin: 40px 0px; /* Space out the Bootstrap <hr> more */
+	     border-top: 1px solid #ccc;
+	     border-bottom: 1px solid #ccc;
+      }
+
+     .featurette-heading {
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -1px;
+            text-align: center;
+      }
+
+    /* responsive youtube container */
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 6px; height: 0; overflow: hidden;
+      border: solid 3px #fff;
+    }
+ 
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+
+
 </style>
 
 <script type="text/javascript">
@@ -293,16 +352,22 @@ div.addthis_toolbox2 {
           <h1>Tapemix</h1>
         </div>
       </div> 
+	<h2 class="featurette-heading"><span class="muted">Your favorite music.</span><br />Like you've never heard it before.<span class="muted"></span></h2>
+<!--
       <div class="row-fluid subheading">
         <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
           <p class="lead">Your favorite music.<br />Like you've never heard it before.</p>
         </div>
       </div>
+-->
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
           <img class="img-polaroid" src="tmx-bit-1.png">
+<!--
+	  <div class="video-container">
+	    <iframe src="//player.vimeo.com/video/54054894?byline=0&amp;portrait=0" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	  </div>
+-->
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -314,17 +379,17 @@ div.addthis_toolbox2 {
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>2</h3> <p>backers</p>
+                <h3>11</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$60</h3> <p>of $2000</p>
+                  <h3>$65</h3> <p>of $2000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>14</h3> <p>days left</p>
+                <h3>21</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -369,6 +434,8 @@ div.addthis_toolbox2 {
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
+	<hr class="featurette-divider">
+	<h2 class="featurette-heading"><span class="muted">A </span>shuffle button<span class="muted"> for live music.</span></h2>
         <div class="span5 offset1 asset">
           <img class="img-polaroid" src="tmx-bit-3.png">
         </div>
@@ -380,12 +447,14 @@ div.addthis_toolbox2 {
       </div>
 
       <div class="row-fluid section2">
+	<hr class="featurette-divider">
+	<h2 class="featurette-heading"><span class="muted">Unbelievably </span>easy to use<span class="muted">.</span></h2>
         <div class="span5 offset1 copy copy-right">
-	    <h4>1. Choose bands</h4>
-	    <p>Select a band, or bands, from the Live Music Archive. There are currently over four thousand bands in the archive, with fans and audio engineers uploading hundreds of new concerts every month.</p>
+	    <h4>1. Choose band</h4>
+	    <p>Select a band from the Live Music Archive. There are currently over four thousand to choose from, with tapers uploading hundreds of new shows every month.</p>
 	    <h4>2. Set length</h4>
-	    <p>Let Tapemix know how much music you want. Maybe you're walking to the store. Maybe you're driving to California.</p>
-	    <h4>3. Press play</h4>
+	    <p>Let Tapemix know how much music you want. Maybe you're walking to the store. Maybe you're driving across Canada.</p>
+	    <h4>3. Rock out</h4>
 	    <p>Tapemix will assemble a seamless concert experience for you, randomized so it's never the same twice.</p>
          </div>
         <div class="span5 asset">
@@ -393,26 +462,16 @@ div.addthis_toolbox2 {
         </div>
       </div>
 
-      <div class="row-fluid section3">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="tmx-bit-4.png">
-        </div>
-        <div class="span5 copy">
-          <p>Stretch goals for our bitstarter include:</p>
-	    <ul>
-	      <li>Soft landing : starts & finishes with intro & outro tracks.</li>
-	      <li>Setlist save & export</li>
-	      <li>Filter by audio source (soundboard, mic type, etc.)</li>
-	      <li>Download audio & listen to it offline</li>
-	    </ul>
-          </div>
-      </div>
-     <div class="span10 offset1 fund_header" id="donate">
-          <h3>Donate to Tapemix</h3>
-	  <p>Our goal is to make Tapemix <b>100% open source</b> and <b>ad-free</b>. Unfortunately, we still need to feed both ourselves and our machines. Please consider supporting our efforts with a small donation! While our preferred currency is bitcoin, we realize this is crazy future money that not everyone has, so we've included PayPal buttons at every tier. Thanks in advance!</p>
+      <div class="row-fluid section3" id="donate">
+      
+	<hr class="featurette-divider">
+	<h2 class="featurette-heading"><span class="muted">Help us</span> get started<span class="muted">!</span></h2>
+
+	 <div class="span10 offset1 fund_header">
+	<br />
+	  <p>Our goal is to make Tapemix <b>100% open source</b> and <b>ad-free</b>. Unfortunately, we still need to feed both ourselves and our machines. Please consider supporting our efforts with a small donation! While our preferred currency is bitcoin, we realize this is crazy future money that not everyone has, so we've included PayPal buttons at every tier.</p>
 	<br />
         </div>
-		
 		<div class="row-fluid pricing-table pricing-three-column">
         <div class="span4 plan">
           <div class="plan-name-dr">
@@ -420,7 +479,7 @@ div.addthis_toolbox2 {
             <span>$1 / 0.01 BTC</span>
           </div>
           <ul>
-            <li class="plan-feature">Believe it or not, donations at this level are actually very helpful. You'll be officially credited within the app & on tapemix.org as the seed-funding benefactor you are (unless you'd prefer to remain anonymous).</li>
+            <li class="plan-feature">Believe it or not, donations at this level are actually very helpful! You'll be officially credited within the app & on tapemix.org as the seed-funding benefactor you are. (Unless you'd prefer to remain anonymous.)</li>
             <li class="plan-feature">
 
 
@@ -443,7 +502,7 @@ div.addthis_toolbox2 {
             <span>$10 / 0.1 BTC</span>
           </div>
           <ul>
-            <li class="plan-feature">Thanks! This is sandwich money. Like, <i>James Beard nominated</i> sandwich money. In addition to the above, we'll make & send you an actual mix tape.</li>
+            <li class="plan-feature">Thanks! This is sandwich money. Like, <i>James Beard-nominated</i> sandwich money. In addition to the above, we'll make & send you an actual mix tape.</li>
 				<li class="plan-feature">            
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -485,8 +544,11 @@ div.addthis_toolbox2 {
       </div>
       		<div class="row-fluid section1">
         <div class="span10 offset1 fund_header" id="social">
-          <h3>Help Spread the Word!</h3>
-          <p>Can't support us by donating? No problem. The more people know about this, the better, so please consider showing your support on a social network or two.</p>
+	<hr class="featurette-divider">
+	<h2 class="featurette-heading"><span class="muted">Help us</span> spread the word<span class="muted">!</span></h2>
+        <br />  
+	<p>Can't support us by donating? No problem. The more people know about this, the better, so please consider showing your support on a social network or two.</p>
+	<br />
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox2 addthis_default_style addthis_32x32_style">
 <a class="addthis_button_preferred_1"></a>
@@ -505,9 +567,11 @@ div.addthis_toolbox2 {
       </div>			 <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq" id="faq">
+      <div class="row-fluid faq">
           <div class="span10 offset1">
-    	   <h3>FAQ</h3>
+	<hr class="featurette-divider" id="faq">
+	<h2 class="featurette-heading">FAQ</h2>
+	<br />
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
@@ -545,7 +609,7 @@ div.addthis_toolbox2 {
                 </div>
                 <div id="collapseThree" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Tapemix is the baby pet project of Dave Lowensohn, a musician/coder from the Pacific Northwest who's been musician/coding for the better part of his adult life & thought it would be fun to combine the two. He helms Handwoven Industries, a <a href="http://www.handwovenindustries.com" target="_blank" title="Portland web developer" alt="Portland website design">Portland web design</a> studio which lets him use the word "we." His band Speechwriters LLC somehow has <a href="http://archive.org/search.php?query=speechwriters%20llc" target="_blank" title="Speechwriters LLC at archive.org" alt="Speechwriters LLC at archive.org">almost a million downloads on archive.org</a> & he's not ashamed to admit that he has like six cubic feet of Phish tapes in a box downstairs.
+                    Tapemix is the baby pet project of Dave Lowensohn, a musician/coder from the Pacific Northwest who's been musician/coding for the better part of his adult life & thought it would be fun to combine the two. He helms Handwoven Industries, a <a href="http://www.handwovenindustries.com" target="_blank" title="Portland web developer" alt="Portland website design">Portland web design</a> studio which lets him use the word "we." His band <a href="http://www.speechwritersllc.com" alt="Speechwriters LLC" title="Speechwriters LLC" target="_blank">Speechwriters LLC</a> somehow has <a href="http://archive.org/search.php?query=speechwriters%20llc" target="_blank" title="Speechwriters LLC at archive.org" alt="Speechwriters LLC at archive.org">almost a million downloads on archive.org</a> & he's not ashamed to admit that he has like six cubic feet of Phish tapes in a box downstairs.
                   </div>
                 </div>
               </div>
