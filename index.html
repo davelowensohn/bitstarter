@@ -1,35 +1,35 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
+
     <title>Tapemix - Bitstarter - A shuffle button for live music</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" rel="stylesheet">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="text/css">
 
-	.heading h1 {
-	  font-size: 50px;
-	  line-height: 50px;
-	}
+    .heading h1 {
+      font-size: 50px;
+      line-height: 50px;
+    }
 
-	
-	.row-fluid [class*="offset"]:first-child {
-	  margin-bottom: 10px !important;
-	}
+    .row-fluid [class*="offset"]:first-child {
+      margin-bottom: 10px !important;
+    }
 
-	.accordion-group, .accordion-inner {
-	  border-top: none !important;
-	  border-bottom: none !important;
-	  border-left: none !important;
-	  border-right: none !important;
-	}
+    .accordion-group, .accordion-inner {
+      border-top: none !important;
+      border-bottom: none !important;
+      border-left: none !important;
+      border-right: none !important;
+    }
 
       /* Large desktop */
       @media (min-width: 980px) { 
@@ -62,21 +62,23 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	background: /* url(tapemix-tessellate-v01.png) */ #ddd;	
+        background: #ddd;   
       }
       div.container {
-	background: #ddd;
+        background: #ddd;
       }
 
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
+      
       p.lead {
         padding-top: 1.5%;
         font-size: 24px;
         line-height: 30px;
       }
+      
       p {
         font-size: 18px;
         line-height: 24px;
@@ -96,16 +98,23 @@
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      
-      
+      .video {
+	padding:4px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	border:1px solid rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.1);
+      } 
       .statistics p {
-	font-size: 14px !important;
-	color: #fff;
+    font-size: 14px !important;
+    color: #fff;
       }
 
       .statistics h3 {
-	margin-bottom: 0px !important;
-	color: #ff6;
+    margin-bottom: 0px !important;
+    color: #ff6;
       }
 
       /* Marketing Copy and Footer */
@@ -116,6 +125,7 @@
       }
       .asset {
         padding: 2.5% 0%;
+	text-align: center;
       }
       .footer {
         color: #cccccc;
@@ -125,146 +135,145 @@
         font-size: 11px;
       }
       .footer a {
-	color: #ccf;
+    color: #ccf;
       }
       a {
-	color: #00d;
+    color: #00d;
       } 
 
- 
-/* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
- div.addthis_toolbox {
-  width:180px;
-  margin: 0 auto;
- }
- 
-div.addthis_toolbox2 {
-  width:250px;
-  margin: 0 auto;
- }
 
-	div.container-banner {
-		background: #000 !important;
-	}
-		/*Pricing table CSS below */
-		
-		.pricing-table .plan {
-		  border-radius: 5px;
-		  text-align: center;
-		  background-color: #f3f3f3;
-		  min-height: 370px;
-/*		  max-height: 370px;*/
-		  -moz-box-shadow: 0 0 6px 2px #b0b2ab;
-		  -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
-		  box-shadow: 0 0 6px 2px #b0b2ab;
-		  margin-bottom: 10px;
-		}
-		 
-		 .plan:hover {
-		  background-color: #fff;
-		  -moz-box-shadow: 0 0 12px 3px #b0b2ab;
-		  -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
-		  box-shadow: 0 0 12px 3px #b0b2ab;
-		}
-		 
-		 .plan {
-		  padding: 20px;
-		  color: #ff;
-		  background-color: #5e5f59;
-		  -moz-border-radius: 5px 5px 0 0;
-		  -webkit-border-radius: 5px 5px 0 0;
-		  border-radius: 55px 55px 0 0;
-		}
-		  
-		.plan-name-dr {
-		  padding: 20px;
-		  color: #fff;
-		  background-color: #66f;
-		  -moz-border-radius: 5px 5px 0 0;
-		  -webkit-border-radius: 5px 5px 0 0;
-		  border-radius: 5px 5px 0 0;
-		 }
-		  
-		.plan-name-dg {
-		  padding: 20px;
-		  color: #fff;
-		  background-color: #f66;
-		  -moz-border-radius: 5px 5px 0 0;
-		  -webkit-border-radius: 5px 5px 0 0;
-		  border-radius: 5px 5px 0 0;
-		 }
-		  
-		.plan-name-db {
-		  padding: 20px;
-		  color: #ff0;
-		  background-color: #333;
-		  -moz-border-radius: 5px 5px 0 0;
-		  -webkit-border-radius: 5px 5px 0 0;
-		  border-radius: 5px 5px 0 0;
-		  } 
-		.pricing-table-bronze  {
-		  padding: 20px;
-		  color: #fff;
-		  background-color: #f89406;
-		  -moz-border-radius: 5px 5px 0 0;
-		  -webkit-border-radius: 5px 5px 0 0;
-		  border-radius: 5px 5px 0 0;
-		}
-		  
-		.pricing-table .plan .plan-name span {
-		  font-size: 20px;
-		}
-		 
-		.pricing-table .plan ul {
-		  list-style: none;
-		  margin: 0;
-		  -moz-border-radius: 0 0 5px 5px;
-		  -webkit-border-radius: 0 0 5px 5px;
-		  border-radius: 0 0 5px 5px;
-		}
-		 
-		.pricing-table .plan ul li.plan-feature {
-		  padding: 15px 10px;
-		  border-top: 1px solid #c5c8c0;
-		}
-		 
-		.pricing-three-column {
-		  margin: 0 auto;
-		  width: 85%;
-		}
-		 
-		.pricing-variable-height .plan {
-		  float: none;
-		  margin-left: 2%;
-		  vertical-align: bottom;
-		  display: inline-block;
-		  zoom:1;
-		  *display:inline;
-		}
-		 
-		.plan-mouseover .plan-name {
-		  background-color: #4e9a06 !important;
-		}
-		 
-		.btn-plan-select {
-		  padding: 8px 25px;
-		  font-size: 18px;
-		}
+    /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+    div.addthis_toolbox {
+    width:180px;
+    margin: 0 auto;
+    }
 
-		.progress {
-		  margin-bottom: 5px !important;
-		}
+    div.addthis_toolbox2 {
+    width:250px;
+    margin: 0 auto;
+    }
 
-		p.weaselwords {
-		  color: #666;
-		  font-size: 14px;
-		  text-align: center;
-		}
+    div.container-banner {
+        background: #000 !important;
+    }
+        /*Pricing table CSS below */
+
+        .pricing-table .plan {
+          border-radius: 5px;
+          text-align: center;
+          background-color: #f3f3f3;
+          min-height: 370px;
+          -moz-box-shadow: 0 0 6px 2px #b0b2ab;
+          -webkit-box-shadow: 0 0 6px 2px #b0b2ab;
+          box-shadow: 0 0 6px 2px #b0b2ab;
+          margin-bottom: 10px;
+        }
+
+         .plan:hover {
+          background-color: #fff;
+          -moz-box-shadow: 0 0 12px 3px #b0b2ab;
+          -webkit-box-shadow: 0 0 12px 3px #b0b2ab;
+          box-shadow: 0 0 12px 3px #b0b2ab;
+        }
+
+         .plan {
+          padding: 20px;
+          color: #ff;
+          background-color: #5e5f59;
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 55px 55px 0 0;
+        }
+
+        .plan-name-dr {
+          padding: 20px;
+          color: #fff;
+          background-color: #66f;
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+         }
+
+        .plan-name-dg {
+          padding: 20px;
+          color: #fff;
+          background-color: #f66;
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+         }
+
+        .plan-name-db {
+          padding: 20px;
+          color: #ff0;
+          background-color: #333;
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+          } 
+        .pricing-table-bronze  {
+          padding: 20px;
+          color: #fff;
+          background-color: #f89406;
+          -moz-border-radius: 5px 5px 0 0;
+          -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+        }
+
+        .pricing-table .plan .plan-name span {
+          font-size: 20px;
+        }
+
+        .pricing-table .plan ul {
+          list-style: none;
+          margin: 0;
+          -moz-border-radius: 0 0 5px 5px;
+          -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+        }
+
+        .pricing-table .plan ul li.plan-feature {
+          padding: 15px 10px;
+          border-top: 1px solid #c5c8c0;
+        }
+
+        .pricing-three-column {
+          margin: 0 auto;
+          width: 85%;
+        }
+
+        .pricing-variable-height .plan {
+          float: none;
+          margin-left: 2%;
+          vertical-align: bottom;
+          display: inline-block;
+          zoom:1;
+          *display:inline;
+        }
+
+        .plan-mouseover .plan-name {
+          background-color: #4e9a06 !important;
+        }
+
+        .btn-plan-select {
+          padding: 8px 25px;
+          font-size: 18px;
+        }
+
+        .progress {
+          margin-bottom: 5px !important;
+        }
+
+        p.weaselwords {
+          color: #666;
+          font-size: 14px;
+          text-align: center;
+        }
 
       .featurette-divider {
-             margin: 40px 0px; /* Space out the Bootstrap <hr> more */
-	     border-top: 1px solid #ccc;
-	     border-bottom: 1px solid #ccc;
+             margin: 40px 0px; /* Space out the Bootstrap hr more */
+         border-top: 1px solid #ccc;
+         border-bottom: 1px solid #ccc;
       }
 
      .featurette-heading {
@@ -281,9 +290,8 @@ div.addthis_toolbox2 {
       position: relative;
       padding-bottom: 56.25%;
       padding-top: 0px; height: 0; overflow: hidden;
-      border: solid 3px #fff;
     }
- 
+
     .video-container iframe,
     .video-container object,
     .video-container embed {
@@ -296,368 +304,299 @@ div.addthis_toolbox2 {
 
 
 
-</style>
+    </style>
+    <script type="text/javascript">
 
-<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-42985651-1']);
+    _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-42985651-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
+    (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+    })();
 
-</script>
-
+    </script>
 </head>
-  <body>
 
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+<body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container container-banner">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Tapemix</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#donate">Donate</a></li>
-              <li><a href="#faq">FAQ</a></li>
-<!--
-     		<li><a href="/orders">Orders</a></li>
-		<li><a href="mailto:info@tapemix.org?Subject=Tapemix%20Bitstarter" data-rel="external">Contact</a></li>
--->
-            </ul>
-          </div><!--/.nav-collapse -->
+        <div class="navbar-inner">
+            <div class="container container-banner">
+                <button class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="brand" href="#">Tapemix</a>
+
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active">
+                            <a href="#">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#donate">Donate</a>
+                        </li>
+
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
         </div>
-      </div>
     </div>
 
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
-      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
-      <!-- www.google.com/fonts/specimen/Ubuntu -->
-      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Tapemix</h1>
-        </div>
-      </div> 
-	<h2 class="featurette-heading"><span class="muted">Your favorite music.</span><br />Like you've never heard it before.<span class="muted"></span></h2>
-<!--
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <p class="lead">Your favorite music.<br />Like you've never heard it before.</p>
-        </div>
-      </div>
--->
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-<!--
-          <img class="img-polaroid" src="tmx-bit-1.png">
--->
-	  <div class="video-container">
-	    <iframe src="//player.vimeo.com/video/74252422?byline=0&amp;portrait=0&amp;color=cccc33&amp;outro=0" width="680" height="383" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-	  </div>
-        </div>
-
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>11</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$65</h3> <p>of $2000</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>21</h3> <p>days left</p>
-                </div>
-              </div>
+        <div class="row-fluid heading">
+            <div class="span12">
+                <h1>Tapemix</h1>
             </div>
-          </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 3%;"></div>
-              <div class="bar bar-warning" style="width: 97%;"></div>
+        </div>
+
+        <h2 class="featurette-heading"><span class="muted">Your favorite music.</span><br>
+        Like you've never heard it before.</h2>
+
+        <div class="row-fluid pitch">
+            <div class="span5 offset1 video">
+                <div class="video-container">
+                    <iframe frameborder="0" height="383" src="//player.vimeo.com/video/74252422?byline=0&amp;portrait=0&amp;color=cccc33&amp;outro=0" width="680"></iframe>
+                </div>
             </div>
-	    <p class="weaselwords">(updated every day or so)</p>
-          </div>
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-       <!-- 
-<a class="coinbase-button" data-code="35bbdc038c0bae0996b9884d2c1e671d" data-button-style="custom_large" data-button-text="Preorder with Bitcoin" href="https://coinbase.com/checkouts/35bbdc038c0bae0996b9884d2c1e671d">Preorder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-    <button class="btn btn-success btn-large">Preorder</button>
--->
-	<a href="#donate" class="btn btn-success btn-large">Donate Now!</a>
-          </div>
 
-<div class="span8 offset2 social">
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52033b313e7878e0"></script>
-<!-- AddThis Button END -->
-</div>
+            <div class="span5 actions">
+                <div class="span8 offset2">
+                    <div class="statistics">
+                        <div class="span4">
+                            <div class="linediv-l">
+                                <h3>11</h3>
 
-        </div>
-      </div>
+                                <p>backers</p>
+                            </div>
+                        </div>
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1">
-	<hr class="featurette-divider">
-	<h2 class="featurette-heading"><span class="muted">A </span>shuffle button<span class="muted"> for live music.</span></h2>
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="tmx-bit-3.png">
-        </div>
-        <div class="span5 copy">
-          <p>
-	    Tapemix is a lightweight, cross-platform web app that makes live music mixtapes at the push of a button. It works on desktop, tablet and mobile devices, and is optimized for hands free, on-the-go playback. 
-          </p>
-        </div>
-      </div>
+                        <div class="span4">
+                            <div class="linediv-c">
+                                <h3>$65</h3>
 
-      <div class="row-fluid section2">
-	<hr class="featurette-divider">
-	<h2 class="featurette-heading"><span class="muted">Unbelievably </span>easy to use<span class="muted">.</span></h2>
-        <div class="span5 offset1 copy copy-right">
-	    <h4>1. Choose band</h4>
-	    <p>Select a band from the Live Music Archive. There are currently over four thousand to choose from, with tapers uploading hundreds of new shows every month.</p>
-	    <h4>2. Set length</h4>
-	    <p>Let Tapemix know how much music you want. Maybe you're walking to the store. Maybe you're driving across Canada.</p>
-	    <h4>3. Rock out</h4>
-	    <p>Tapemix will assemble a seamless concert experience for you, randomized so it's never the same twice.</p>
-         </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="tmx-bit-2.png">
-        </div>
-      </div>
+                                <p>of $2000</p>
+                            </div>
+                        </div>
 
-      <div class="row-fluid section3" id="donate">
-      
-	<hr class="featurette-divider">
-	<h2 class="featurette-heading"><span class="muted">Help us</span> get started<span class="muted">!</span></h2>
+                        <div class="span4">
+                            <div class="linediv-r">
+                                <h3>21</h3>
 
-	 <div class="span10 offset1 fund_header">
-	<br />
-	  <p>Our goal is to make Tapemix <b>100% open source</b> and <b>ad-free</b>. Unfortunately, we still need to feed both ourselves and our machines. Please consider supporting our efforts with a small donation! While our preferred currency is bitcoin, we realize this is crazy future money that not everyone has, so we've included PayPal buttons at every tier.</p>
-	<br />
-        </div>
-		<div class="row-fluid pricing-table pricing-three-column">
-        <div class="span4 plan">
-          <div class="plan-name-dr">
-            <h2>The J&#8209;Card</h2>
-            <span>$1 / 0.01 BTC</span>
-          </div>
-          <ul>
-            <li class="plan-feature">Believe it or not, donations at this level are actually very helpful! You'll be officially credited within the app & on tapemix.org as the seed-funding benefactor you are. (Unless you'd prefer to remain anonymous.)</li>
-            <li class="plan-feature">
-
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-<a class="coinbase-button" data-code="7415c0fdbf68b4aa90076b07cd2caa66" data-button-style="donation_small" href="https://coinbase.com/checkouts/7415c0fdbf68b4aa90076b07cd2caa66">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-
-	   </li>
-          </ul>
-        </div>
-        <div class="span4 plan">
-          <div class="plan-name-dg">
-            <h2>The B&nbsp;&amp;&nbsp;P</h2>
-            <span>$10 / 0.1 BTC</span>
-          </div>
-          <ul>
-            <li class="plan-feature">Thanks! This is sandwich money. Like, <i>James Beard-nominated</i> sandwich money. In addition to the above, we'll make & send you an actual mix tape.</li>
-				<li class="plan-feature">            
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-<a class="coinbase-button" data-code="05ab93dfbb69473391420054a17527cb" data-button-style="donation_small" href="https://coinbase.com/checkouts/05ab93dfbb69473391420054a17527cb">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-
-
-				</li>
-          </ul>
-        </div>
-        <div class="span4 plan">
-          <div class="plan-name-db">
-            <h2>The Analog Master</h2>
-            <span>$100 / 1 BTC</span>
-          </div>
-          <ul>
-            <li class="plan-feature">What are you, made of virtual currency? Once we pick our jaws off the ground, we'll give you all of the above PLUS a t-shirt of your favorite archive.org band.</li>
-			<li class="plan-feature">            
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-
-
-<a class="coinbase-button" data-code="0f6aa4d613fd38a2566632b14728493d" data-button-style="donation_small" href="https://coinbase.com/checkouts/0f6aa4d613fd38a2566632b14728493d">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
-				</li>
-          </ul>
-        </div>
-      </div>
-      		<div class="row-fluid section1">
-        <div class="span10 offset1 fund_header" id="social">
-	<hr class="featurette-divider">
-	<h2 class="featurette-heading"><span class="muted">Help us</span> spread the word<span class="muted">!</span></h2>
-        <br />  
-	<p>Can't support us by donating? No problem. The more people know about this, the better, so please consider showing your support on a social network or two.</p>
-	<br />
-<!-- AddThis Button BEGIN -->
-<div class="addthis_toolbox2 addthis_default_style addthis_32x32_style">
-<a class="addthis_button_preferred_1"></a>
-<a class="addthis_button_preferred_2"></a>
-<a class="addthis_button_preferred_3"></a>
-<a class="addthis_button_preferred_4"></a>
-<a class="addthis_button_compact"></a>
-<a class="addthis_counter addthis_bubble_style"></a>
-</div>
-<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52033b313e7878e0"></script>
-<!-- AddThis Button END -->
-
-
-        </div>
-      </div>			 <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-	<hr class="featurette-divider" id="faq">
-	<h2 class="featurette-heading">FAQ</h2>
-	<br />
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    Is [SOME BAND] on Tapemix?
-                  </a>
+                                <p>days left</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Maybe! Check out the full list of 4500+ participating bands at the <a href="http://archive.org/browse.php?collection=etree&field=%2Fmetadata%2Fcreator" target="_blank" alt="Live Music Archive" title="Live Music Archive">Live Music Archive</a>.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    You're sure this is legal?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Yep. Our audio files come directly from the <a href="http://archive.org/details/etree" target="_blank" alt="Live Music Archive" title="Live Music Archive">Live Music Archive at Archive.org</a>, which only accepts music from bands who have provided written authorization for the recording and circulation of their live performances. As per the <a href="http://archive.org/about/faqs.php#240" target="_blank" alt="LMAFAQ" title="LMAFAQ">Live Music Archive's own FAQ</a>: <em>"Patrons may download from the LMA with the understanding that the artists still hold their copyrights. All material is strictly noncommercial, both for access here and for any further distribution."</em>
-                  </div>
-                </div>
-              </div>
 
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseThree">
-                    Who are you?
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Tapemix is the baby pet project of Dave Lowensohn, a musician/coder from the Pacific Northwest who's been musician/coding for the better part of his adult life & thought it would be fun to combine the two. He helms Handwoven Industries, a <a href="http://www.handwovenindustries.com" target="_blank" title="Portland web developer" alt="Portland website design">Portland web design</a> studio which lets him use the word "we." His band <a href="http://www.speechwritersllc.com" alt="Speechwriters LLC" title="Speechwriters LLC" target="_blank">Speechwriters LLC</a> somehow has <a href="http://archive.org/search.php?query=speechwriters%20llc" target="_blank" title="Speechwriters LLC at archive.org" alt="Speechwriters LLC at archive.org">almost a million downloads on archive.org</a> & he's not ashamed to admit that he has like six cubic feet of Phish tapes in a box downstairs.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseFour">
-                    What's wrong with you that you're asking for bitcoin?
-                  </a>
-                </div>
-                <div id="collapseFour" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    A valid question. One, this is actually the final project for <a href="https://www.coursera.org/course/startup" target="_blank" title="Startup Engineering at Coursera" alt="Startup Engineering at Coursera">an online course</a> and we get graded on how much bitcoin we're able to raise. Two, if enough money actually comes in, we'll be able to take some time away from paid work and get Tapemix off the ground much quicker than anticipated. To that end, we're also accepting plain old US dollars, but encourage you to use bitcoin if you can.
-                  </div>
-                </div>
-              </div>
+                <div class="span10 offset1">
+                    <div class="thermometer progress active">
+                        <div class="bar bar-success" style="width: 3%;"></div>
 
+                        <div class="bar bar-warning" style="width: 97%;"></div>
+                    </div>
 
+                    <p class="weaselwords">(updated every day or so)</p>
+                </div>
+
+                <div class="span6 offset3 order">
+                    <a class="btn btn-success btn-large" href="#donate">Donate Now!</a>
+                </div>
+
+                <div class="span8 offset2 social">
+                    <!-- AddThis Button BEGIN -->
+
+                    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+                        <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_compact"></a> <a class="addthis_counter addthis_bubble_style"></a>
+                    </div><script type="text/javascript">
+var addthis_config = {"data_track_addressbar":true};
+                    </script> <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52033b313e7878e0" type="text/javascript"></script> <!-- AddThis Button END -->
+                </div>
             </div>
-          </div>
-
-      </div>
-
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
         </div>
-      </div>
-    </div>
+        <hr class="featurette-divider">
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        <h2 class="featurette-heading"><span class="muted">A</span> shuffle button <span class="muted">for live music.</span></h2>
 
-  ga('create', 'UA-42985651-1', 'herokuapp.com');
-  ga('send', 'pageview');
+        <div class="row-fluid section1">
+            <div class="span5 offset1 asset"><img class="img-polaroid" src="tmx-bit-3.png"></div>
 
-</script>
+            <div class="span5 copy">
+                <p>Tapemix is a lightweight, cross-platform web app that makes live music mixtapes at the push of a button. It works on desktop, tablet and mobile devices, and is optimized for hands free, on-the-go playback.</p>
+            </div>
+        </div>
+        <hr class="featurette-divider">
 
-  </body>
+        <h2 class="featurette-heading"><span class="muted">Unbelievably</span> easy to use<span class="muted">.</span></h2>
+
+        <div class="row-fluid section2">
+            <div class="span5 offset1 copy copy-right">
+                <h4>1. Choose band</h4>
+
+                <p>Select a band from the Live Music Archive. There are currently over four thousand to choose from, with tapers uploading hundreds of new shows every month.</p>
+
+                <h4>2. Set length</h4>
+
+                <p>Let Tapemix know how much music you want. Maybe you're walking to the store. Maybe you're driving across Canada.</p>
+
+                <h4>3. Rock out</h4>
+
+                <p>Tapemix will assemble a seamless concert experience for you, randomized so it's never the same twice.</p>
+            </div>
+
+            <div class="span5 asset"><img class="img-polaroid" src="tmx-bit-2.png"></div>
+        </div>
+        <hr class="featurette-divider">
+
+        <h2 class="featurette-heading"><span class="muted">Help us</span> get started<span class="muted">!</span></h2>
+
+        <div class="row-fluid section3" id="donate">
+            <div class="span10 offset1 fund_header">
+                <br>
+
+                <p>Our goal is to make Tapemix <strong>100% open source</strong> and <strong>ad-free</strong>. Unfortunately, we still need to feed both ourselves and our machines. Please consider supporting our efforts with a small donation! While our preferred currency is bitcoin, we realize this is crazy future money that not everyone has, so we've included PayPal buttons at every tier.</p><br>
+            </div>
+
+            <div class="row-fluid pricing-table pricing-three-column">
+                <div class="span4 plan">
+                    <div class="plan-name-dr">
+                        <h2>The J&#8209;Card</h2><span>$1 / 0.01 BTC</span>
+                    </div>
+
+                    <ul>
+                        <li class="plan-feature">Believe it or not, donations at this level are actually very helpful! You'll be officially credited within the app & on tapemix.org as the seed-funding benefactor you are. (Unless you'd prefer to remain anonymous.)</li>
+
+                        <li class="plan-feature">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input name="cmd" type="hidden" value="_s-xclick"> <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7----- "> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"> <img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1">
+                            </form><a class="coinbase-button" data-button-style="donation_small" data-code="7415c0fdbf68b4aa90076b07cd2caa66" href="https://coinbase.com/checkouts/7415c0fdbf68b4aa90076b07cd2caa66">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="span4 plan">
+                    <div class="plan-name-dg">
+                        <h2>The B&nbsp;&amp;&nbsp;P</h2><span>$10 / 0.1 BTC</span>
+                    </div>
+
+                    <ul>
+                        <li class="plan-feature">Thanks! This is sandwich money. Like, <em>James Beard-nominated</em> sandwich money. In addition to the above, we'll make & send you an actual mix tape.</li>
+
+                        <li class="plan-feature">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input name="cmd" type="hidden" value="_s-xclick"> <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7----- "> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"> <img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1">
+                            </form><a class="coinbase-button" data-button-style="donation_small" data-code="05ab93dfbb69473391420054a17527cb" href="https://coinbase.com/checkouts/05ab93dfbb69473391420054a17527cb">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="span4 plan">
+                    <div class="plan-name-db">
+                        <h2>The Analog Master</h2><span>$100 / 1 BTC</span>
+                    </div>
+
+                    <ul>
+                        <li class="plan-feature">What are you, made of virtual currency? Once we pick our jaws off the ground, we'll give you all of the above PLUS a t-shirt of your favorite archive.org band.</li>
+
+                        <li class="plan-feature">
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input name="cmd" type="hidden" value="_s-xclick"> <input name="encrypted" type="hidden" value="-----BEGIN PKCS7-----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-----END PKCS7----- "> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"> <img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1">
+                            </form><a class="coinbase-button" data-button-style="donation_small" data-code="0f6aa4d613fd38a2566632b14728493d" href="https://coinbase.com/checkouts/0f6aa4d613fd38a2566632b14728493d">Donate Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+
+        <h2 class="featurette-heading"><span class="muted">Help us</span> spread the word<span class="muted">!</span></h2><br>
+
+        <div class="row-fluid section4">
+            <div class="span10 offset1 fund_header" id="social">
+                <p>Can't support us by donating? No problem. The more people know about this, the better, so please consider showing your support on a social network or two.</p><br>
+                <!-- AddThis Button BEGIN -->
+
+                <div class="addthis_toolbox2 addthis_default_style addthis_32x32_style">
+                    <a class="addthis_button_preferred_1"></a> <a class="addthis_button_preferred_2"></a> <a class="addthis_button_preferred_3"></a> <a class="addthis_button_preferred_4"></a> <a class="addthis_button_compact"></a> <a class="addthis_counter addthis_bubble_style"></a>
+                </div><script type="text/javascript">
+var addthis_config = {"data_track_addressbar":true};
+                </script> <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52033b313e7878e0" type="text/javascript"></script> <!-- AddThis Button END -->
+            </div>
+        </div>
+        <hr class="featurette-divider" id="faq">
+
+        <h2 class="featurette-heading">FAQ</h2><br>
+
+        <div class="row-fluid faq">
+            <div class="span10 offset1">
+                <div class="accordion" id="accordion2">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseOne">Is [SOME BAND] on Tapemix?</a>
+                        </div>
+
+                        <div class="accordion-body collapse" id="collapseOne">
+                            <div class="accordion-inner">
+                                Maybe! Check out the full list of 4500+ participating bands at the <a href="http://archive.org/browse.php?collection=etree&field=%2Fmetadata%2Fcreator" target="_blank" title="Live Music Archive">Live Music Archive</a>.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseTwo">You're sure this is legal?</a>
+                        </div>
+
+                        <div class="accordion-body collapse" id="collapseTwo">
+                            <div class="accordion-inner">
+                                Yep. Our audio files come directly from the <a href="http://archive.org/details/etree" target="_blank" title="Live Music Archive">Live Music Archive at Archive.org</a>, which only accepts music from bands who have provided written authorization for the recording and circulation of their live performances. As per the <a href="http://archive.org/about/faqs.php#240" target="_blank" title="LMAFAQ">Live Music Archive's own FAQ</a>: <em>"Patrons may download from the LMA with the understanding that the artists still hold their copyrights. All material is strictly noncommercial, both for access here and for any further distribution."</em>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseThree">Who are you?</a>
+                        </div>
+
+                        <div class="accordion-body collapse" id="collapseThree">
+                            <div class="accordion-inner">
+                                Tapemix is the baby pet project of Dave Lowensohn, a musician/coder from the Pacific Northwest who's been musician/coding for the better part of his adult life & thought it would be fun to combine the two. He helms Handwoven Industries, a <a href="http://www.handwovenindustries.com" target="_blank" title="Portland web developer">Portland web design</a> studio which lets him use the word "we." His band <a href="http://www.speechwritersllc.com" target="_blank" title="Speechwriters LLC">Speechwriters LLC</a> somehow has <a href="http://archive.org/search.php?query=speechwriters%20llc" target="_blank" title="Speechwriters LLC at archive.org">almost a million downloads on archive.org</a> & he's not ashamed to admit that he has like six cubic feet of Phish tapes in a box downstairs.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-parent="#accordion2" data-toggle="collapse" href="#collapseFour">What's wrong with you that you're asking for bitcoin?</a>
+                        </div>
+
+                        <div class="accordion-body collapse" id="collapseFour">
+                            <div class="accordion-inner">
+                                A valid question. One, this is actually the final project for <a href="https://www.coursera.org/course/startup" target="_blank" title="Startup Engineering at Coursera">an online course</a> and we get graded on how much bitcoin we're able to raise. Two, if enough money actually comes in, we'll be able to take some time away from paid work and get Tapemix off the ground much quicker than anticipated. To that end, we're also accepting plain old US dollars, but encourage you to use bitcoin if you can.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row-fluid footer">
+            <div class="span12">
+                <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a> , without all the cruft that would otherwise be put at the bottom of the page.</p>
+            </div>
+        </div>
+    </div><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-42985651-1', 'herokuapp.com');
+        ga('send', 'pageview');
+
+    </script>
+</body>
 </html>
